@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 6%;
+  background: linear-gradient(135deg, #14032a, #22053f, #320a5e);
+  background-size: 300% 300%;
+  animation: navGlow 20s ease infinite;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+@keyframes navGlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle-logo {
+  width: 24px;
+  height: 24px;
+  background-color: #c273ff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #c273ff;
+}
+
+.site-title {
+  color: #f0e9ff;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 0 4px #c273ff;
+}
+
+.nav-right {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin-right: 100px; /* 👈 pulls links slightly left */
+}
+.nav-right li a {
+  font-size: 0.9rem;
+  color: #d9caff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.nav-right li a:hover {
+  color: #c273ff;
+  text-shadow: 0 0 6px #c273ff;
+}
+
+.active-link {
+  background-color: #c273ff;
+  color: white;
+  box-shadow: 0 0 10px #c273ff;
+}

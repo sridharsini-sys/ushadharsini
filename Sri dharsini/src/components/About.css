@@ -1,0 +1,66 @@
+.about {
+  padding: 120px 5% 100px;
+  background: linear-gradient(135deg, #120426, #1a0436, #25064b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 0 32px rgba(190, 120, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #e6d6ff;
+  margin-bottom: 24px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 0 2px #a86fff;
+}
+
+.about-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #f0e9ff;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.about {
+  padding: 120px 5% 100px;
+  /* ... */
+}
+.about {
+  padding: 40px 5% 100px; /* ⬅️ reduce top padding */
+  margin-top: -60px;      /* ⬅️ pull it up closer to Hero */
+  /* rest stays the same */
+}
+.section-divider {
+  height: 40px;
+  background: linear-gradient(to right, transparent, #c273ff40, transparent);
+  margin-bottom: 20px;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  padding: 100px 8% 0;
+  /* rest of styling */
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  padding: 160px 8% 0;   /* ⬅️ Increase top padding */
+  /* rest of your styling (background, animation, etc.) */
+}

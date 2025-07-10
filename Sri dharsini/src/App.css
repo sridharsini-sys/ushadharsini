@@ -1,0 +1,54 @@
+/* App.css */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(160deg, #120426, #1a0436, #25064b);
+  background-size: 400% 400%;
+  animation: shiftBg 20s ease infinite;
+  scroll-behavior: smooth;
+  color: #f1eaff;
+}
+
+@keyframes shiftBg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Section Titles (for consistency across sections) */
+.section-title {
+  section {
+  scroll-margin-top: 100px; /* adjust for your navbar height */
+}
+  font-size: 2rem;
+  color: #4b2aad;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #bca0f8;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Optional animation for gradient */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
