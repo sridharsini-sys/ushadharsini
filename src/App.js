@@ -1,20 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import RegisterForm from './pages/RegisterForm';
-import LoginForm from './pages/LoginForm';
-import Dashboard from './pages/Dashboard';
+import StudentCards from './components/StudentCards';
+import Footer from './components/Footer';
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<RegisterForm />} />
-        <Route path="/register" element={<RegisterForm />} />
-        <Route path="/login" element={<LoginForm />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <div>
+      <h1 style={{
+        textAlign: 'center',
+        color: '#64ffda',
+        textShadow: '0 0 12px #64ffda',
+        fontSize: '2.5rem',
+        margin: '20px 0',
+        fontFamily: 'Poppins, sans-serif'
+      }}>
+        Student Profile Showcase App 💫
+      </h1>
+
+      <StudentCards />
+      <Footer />
+    </div>
   );
-};
+}
 
 export default App;
